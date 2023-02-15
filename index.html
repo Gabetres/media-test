@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Média</title>
+
+    <script type="text/javascript">
+        var nome, n1, n2, n3, media;
+
+        name=prompt("Digite seu nome aqui");
+
+        n1 = prompt("Informe a nota 1");
+        n1 = eval(n1);
+
+        n2 = prompt("Informe a nota 2");
+        n2 = eval(n2);
+
+        n3 = prompt("Informe a nota 3");
+        n3 = eval(n3);
+
+        media = (n1 + n2 + n3) / 3;
+
+        if (media >= 6) {
+            document.write( name ," esta aprovado com a média ", media); document.body.style.color = "green";
+        }
+
+        else {
+            if (media <= 5) {
+                document.write(name ," esta reprovado com a média ", media); 
+            }
+            else {
+                document.write(name ," esta de recuperação com a média ", media); document.body.style.color = "red";
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
